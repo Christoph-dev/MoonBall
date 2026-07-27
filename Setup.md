@@ -2,7 +2,7 @@
 
 - Open Unreal Engine and hit `New Project`.
 - Use the settings below.  
-![](<images/images/Setup1.png>)  
+![](<images/Setup1.png>)  
 
 - Choose a suitable directory and hit `Create`
 
@@ -25,18 +25,18 @@ Content
 - Go to the `Art` folder, right click and create a material called `M_WhiteE`
 - Open the Material and create this node network below:  
 	- *Hint: Hold 3 and click to create the RGB Node*
-![](<images/images/Pasted image 20260725133323.png>)  
+![](<images/Pasted image 20260725133323.png>)  
 - Save and close this material.
 - Create a second material called `M_GrayE`, as below:  
-![](<images/images/Pasted image 20260725133512.png>)  
+![](<images/Pasted image 20260725133512.png>)  
 - Save and close this material.
 ## Blank Map
 - Go inside the `Maps` folder, right click and creata a level called `Map_A`
 - Double click to open it.
 - Click on the `Quick Add` button in the viewport and create a `Cube`.  
-![](<images/images/Pasted image 20260725133016.png>)  
+![](<mages/Pasted image 20260725133016.png>)  
 - For now, set the material of the `Cube` to `M_GrayE`, which can be done through the details panel on the bottom right.  
-![](<images/images/Pasted image 20260725133801.png>)  
+![](<images/Pasted image 20260725133801.png>)  
 
 - Then set the Scale of the cube to `[20, 20, 1]` in the details panel.
 - Finally set its location to `[0, 0, 0]` aka `World Origin`.
@@ -52,11 +52,11 @@ Content
 - Create another `Blueprint Class`
 	- Select `Character`
 	- Call it `BP_Player`  
-![](<images/images/Pasted image 20260725140643.png>)  
+![](<images/Pasted image 20260725140643.png>)  
 
 - Now in the top menu, go to `Edit -> Project Settings`
 - Search for `default` in the search bar, and then change all of these settings:
-![](<images/images/Pasted image 20260725140930.png>)  
+![](<images/Pasted image 20260725140930.png>)  
 
 ## Input
 

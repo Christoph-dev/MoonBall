@@ -28,12 +28,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Setup.md",
+                "file": "UI.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Setup"
+              "title": "UI"
             }
           }
         ],
@@ -223,11 +223,11 @@
   },
   "active": "1df8a8928140c43d",
   "lastOpenFiles": [
+    "Setup.md",
     "README.md",
     "Level Design.md",
     "Goal Gameplay.md",
     "CheatSheet.md",
-    "Setup.md",
     "Assets/MoonBall@0.5x.png",
     "Assets/MoonBallAudio/WhistleUp_1.wav",
     "Assets/MoonBallAudio/WhistleDown_1.wav",
