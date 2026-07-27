@@ -28,12 +28,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "Setup.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "README"
+              "title": "Setup"
             }
           }
         ],
@@ -217,11 +217,17 @@
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
-      "bases:Create new base": false
+      "bases:Create new base": false,
+      "markdown-importer:Open format converter": false
     }
   },
   "active": "1df8a8928140c43d",
   "lastOpenFiles": [
+    "README.md",
+    "Level Design.md",
+    "Goal Gameplay.md",
+    "CheatSheet.md",
+    "Setup.md",
     "Assets/MoonBall@0.5x.png",
     "Assets/MoonBallAudio/WhistleUp_1.wav",
     "Assets/MoonBallAudio/WhistleDown_1.wav",
@@ -235,9 +241,7 @@
     "New folder",
     "Contents.md",
     "MoonBall@0.5x.png",
-    "README.md",
     "MoonBall26/README.md",
-    "Setup.md",
     "UI.md",
     "images/Pasted image 20260727081855.png",
     "images/Pasted image 20260727081459.png",
@@ -246,10 +250,6 @@
     "images/Pasted image 20260727075717.png",
     "Pasted image 20260727081855.png",
     "Pasted image 20260727081459.png",
-    "Pasted image 20260727081051.png",
-    "Pasted image 20260727080759.png",
-    "Level Design.md",
-    "CheatSheet.md",
-    "Goal Gameplay.md"
+    "Pasted image 20260727081051.png"
   ]
 }

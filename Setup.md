@@ -2,7 +2,7 @@
 
 - Open Unreal Engine and hit `New Project`.
 - Use the settings below.  
-![[Setup1.png]]  
+![](<images/images/Setup1.png>)  
 
 - Choose a suitable directory and hit `Create`
 
@@ -25,18 +25,18 @@ Content
 - Go to the `Art` folder, right click and create a material called `M_WhiteE`
 - Open the Material and create this node network below:  
 	- *Hint: Hold 3 and click to create the RGB Node*
-![[Pasted image 20260725133323.png]]  
+![](<images/images/Pasted image 20260725133323.png>)  
 - Save and close this material.
 - Create a second material called `M_GrayE`, as below:  
-![[Pasted image 20260725133512.png]]  
+![](<images/images/Pasted image 20260725133512.png>)  
 - Save and close this material.
 ## Blank Map
 - Go inside the `Maps` folder, right click and creata a level called `Map_A`
 - Double click to open it.
 - Click on the `Quick Add` button in the viewport and create a `Cube`.  
-![[Pasted image 20260725133016.png]]  
+![](<images/images/Pasted image 20260725133016.png>)  
 - For now, set the material of the `Cube` to `M_GrayE`, which can be done through the details panel on the bottom right.  
-![[Pasted image 20260725133801.png]]  
+![](<images/images/Pasted image 20260725133801.png>)  
 
 - Then set the Scale of the cube to `[20, 20, 1]` in the details panel.
 - Finally set its location to `[0, 0, 0]` aka `World Origin`.
@@ -52,11 +52,11 @@ Content
 - Create another `Blueprint Class`
 	- Select `Character`
 	- Call it `BP_Player`  
-![[Pasted image 20260725140643.png]]  
+![](<images/images/Pasted image 20260725140643.png>)  
 
 - Now in the top menu, go to `Edit -> Project Settings`
 - Search for `default` in the search bar, and then change all of these settings:
-![[Pasted image 20260725140930.png]]  
+![](<images/images/Pasted image 20260725140930.png>)  
 
 ## Input
 
@@ -67,27 +67,27 @@ Content
 - Create another `Input Action` called `IA_Look`
 - Create one more `Input Action` called `IA_Jump`
 - Finally right click and create an `Input Mapping Context` called `IMC_MooBall`  
-![[Pasted image 20260725143243.png]]  
+![](<images/Pasted image 20260725143243.png>)  
 
 - Open `IA_Look`
 	- Set `Value Type` to `Axis2D`  
-![[Pasted image 20260725143333.png]]  
+![](<images/Pasted image 20260725143333.png>)  
 - Save and Close `IA_Look`
 - Open `IA_Move`
 	- Set Value Type to `Axis2D`
-![[Pasted image 20260725143411.png]]  
+![](<images/Pasted image 20260725143411.png>)  
 - Save and Close `IA_Move`
 
 #### Input Mapping Context - Move
 
 - Now open IMC_MoonBall
 - Add a new Mapping  
-![[Pasted image 20260725143530.png]]  
+![](<images/Pasted image 20260725143530.png>)  
 
 - Click the dropdown and set it to `IA_Move`
 - Then Click the `Add` button 4 times.
 - For each mapping, set them to `W, S, A, D`  
-![[Pasted image 20260725143712.png]]  
+![](<images/Pasted image 20260725143712.png>)  
 
 **Set these Parameters per key:**
 - `S`
@@ -97,23 +97,23 @@ Content
 	- Modifier 2: `Swizzle`
 - D
 	- Modifier: `Swizzle`  
-![[Pasted image 20260725144451.png]]  
+![](<images/Pasted image 20260725144451.png>)  
 
 #### Input Mapping Context - Look
 - Now add another `Mapping`
-![[Pasted image 20260725143530.png]]  
+![](<images/Pasted image 20260725143530.png>)  
 
 - Set it to IA_Look
 - Set its bound input to `Mouse XY 2D-Axis`  
-![[Pasted image 20260725144724.png]]  
+![](<images/Pasted image 20260725144724.png>)  
 - Add a `Modifier` and set it to `Negate`
 - Expand the `Negate` options and set it to `Y` only.  
-![[Pasted image 20260725150308.png]]  
+![](<images/Pasted image 20260725150308.png>)  
 #### Input Mapping Context - Jump
 - Add one more `Mapping`
 - Set it to `IA_Jump`
 - Set its bound key to `Spacebar`
-![[Pasted image 20260725144808.png]]  
+![](<images/Pasted image 20260725144808.png>)  
 ### 2 - Input Logic
 The input needs to be assigned to the player.
 
@@ -122,7 +122,7 @@ The input needs to be assigned to the player.
 - Go to the `Event Graph` Tab
 - Make this node network below by right clicking in the graph and searching for the node names.
 	- Then drag the pins together.  
-![[Pasted image 20260725145642.png]]  
+![](<images/Pasted image 20260725145642.png>)  
 - Compile, Save and close `BP_PlayerController`
 
 #### Player Character
@@ -130,16 +130,16 @@ The input needs to be assigned to the player.
 - Go to the `Event Graph` Tab
 ##### Look
 - Create these nodes below by right click and searching for their names:  
-![[Pasted image 20260725150428.png]]  
+![](<images/Pasted image 20260725150428.png>)  
 - Split the blue `Action Value` pin to expose the `X` and the `Y` values.
 ##### Move
 - Create these nodes below by right click and searching for their names:  
-![[Pasted image 20260725150938.png]]  
+![](<images/Pasted image 20260725150938.png>)  
 - Split the blue `Action Value` pin to expose the X and Y values.
 
 ##### Jump
 - Create these nodes below by right click and searching for their names:  
-![[Pasted image 20260725151210.png]]  
+![](<images/Pasted image 20260725151210.png>)  
 
 
 End of Checkpoint 1
